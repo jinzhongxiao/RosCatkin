@@ -1,0 +1,5 @@
+<launch>
+	<node name = "circle_node"  pkg="ros_param_learn"  type="circle_node" />
+	<!--param name = "speed" value="4.0"/>-->
+	<rosparam command="load" file = "$(find ros_param_learn)/param/speed.yaml"/>
+</launch>
